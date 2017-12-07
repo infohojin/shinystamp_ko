@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hojin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/half-slider.css" rel="stylesheet">
+
+    <!-- jiny style sheet -->
+    <link href="/css/jcss.css" rel="stylesheet">
+
+    <!-- 파이어베이스-->
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC8XmJgmRg5C9B6DD5tDj1xYqj767Uv2DU",
+            authDomain: "hojin-io.firebaseapp.com",
+            databaseURL: "https://hojin-io.firebaseio.com",
+            projectId: "hojin-io",
+            storageBucket: "hojin-io.appspot.com",
+            messagingSenderId: "808579629801"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    
+
+
+
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- 상단해더 삽입 -->
+    {% include header.html %}
+
+    <!-- 메인 출력 내용 -->
+    {{ content }}
+
+    <!-- 상단해더 삽입 -->
+    <div class="container">
+        {% include /adsense/adsense_01.html %}
+    </div>   
+
+    <!-- 하단해더 삽입 -->
+    {% include footer.html %}
+
+  </body>
+
+</html>

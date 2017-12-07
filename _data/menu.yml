@@ -1,0 +1,32 @@
+- title: 사각형
+  url: rect
+
+- title: 사각+날짜
+  url: rect_dater
+
+- title: 정사각형
+  url: squre
+
+- title: 정사각+날짜
+  url: squre_dater
+
+- title: 원형
+  url: circle_dater
+
+- title: 타원
+  url: oval
+
+- title: 날짜/숫자
+  url: dater
+
+- title: 교체패드
+  url: pad
+
+- title: 리필잉크
+  url: ink
+
+- title: DIY Kit
+  url: diy
+
+- title: 기타
+  url: etc

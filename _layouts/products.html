@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<!-- 상품설명  -->
+<div class="container">
+
+	<!-- 상단바  -->
+	<ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+          <li class="breadcrumb-item active">{{ page.type }}</li>
+        </li>       
+    </ol>
+
+    <div class="row">
+        <!-- 본문-->
+        <div class="col-lg-9">
+            
+            {{ content }}
+            
+        </div>
+        <!-- /.col-lg-9 -->
+        <!-- 메뉴-->
+        <div class="col-lg-3">
+            <div class="list-group">
+                {% for menu in site.data.product %}
+                    <a href="/{{menu.url}}" class="list-group-item"> {{menu.title}} </a>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- /.col-lg-3 -->
+    </div>
+</div>
+<!-- /.container -->
+

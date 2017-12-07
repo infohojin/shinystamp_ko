@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<!-- 상품설명  -->
+<div class="container">
+
+	<!-- 상단바  -->
+	<ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/">Home</a>
+          <li class="breadcrumb-item active">{{page.categories}}</li>
+          <li class="breadcrumb-item">{{page.type}}</li>
+        </li>       
+    </ol>
+
+	<div class="row">
+		<!-- 좌측: 이미지 정보 -->
+        <div class="col-lg-6">
+        	<div class="card mt-4">
+        		<!-- 이미지  -->
+    			<img class="card-img-top img-fluid" src="{{page.images1}}" alt="">    			
+			</div>
+        </div>
+
+        <!-- 우측: 가격정보  -->
+        <div class="col-lg-6">           
+            <!-- 가격및 설명  -->
+            <div class="card-body">
+                <h2 class="card-title">{{page.title}}</h2>
+                <hr>
+                
+                <h4>스팩 : {{page.size}}</h4>
+                <h4>판매가격 : {{page.price}}원 (부가세별도)</h4>
+                <p class="card-text">{{page.subtitle}}</p>
+                <hr>
+
+                <p><b>주문방법</b></p>
+                <p>제작하실 제품과 내용을 이메일(infohojin@naver.com) 으로 보내주시면 됩니다. 제작기간은 2~3일정도 소요됩니다.</p>
+
+                <p><b>입금계좌</b></p>
+                <p>우리은행 560-273083-02-001 이호진</p>
+                <hr>
+
+            </div>            
+        </div>        
+
+	</div>
+	<!-- /.row -->
+
+    <!-- 2단 : 상품 설명부분 -->
+    <div class="row">
+        <div class="col-lg-9">
+            <!-- 설명  -->
+            <div class="card card-outline-secondary my-4">
+                <div class="card-header">
+                    제품설명
+                </div>
+                <div class="card-body">
+                    {{ content }}           
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- 상품설명 우측에 관련 제품 목록 메뉴 출력함 -->
+        <div class="col-lg-3">
+            <div class="mt-4">
+            <div class="list-group">        
+                {% for goods in site.pages %}
+                    {% if goods.type == page.type %}                      
+                    <a href="{{ goods.permalink }}" class="list-group-item">
+                        {{ goods.title }}
+                        {% if goods.size %} 
+                            ({{ goods.size }})
+                        {% endif %}
+                    </a>
+                    {% endif %}
+                {% endfor %}
+            </div>  
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+

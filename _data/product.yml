@@ -1,0 +1,79 @@
+- title: New Printer Line
+  url: new_printer_line
+  subtitle: "신규 추가된 모델입니다."
+  images: "/images/new_printer_line.jpg"
+
+- title: Printer Line
+  url: printer_line
+  subtitle: "가장 많이 사용되는 모델입니다."
+  images: "/images/printer_line.jpg"
+
+- title: NTBac Line
+  url: ntbac_line
+  subtitle: "NTbac 라인은 세균 냄새의 성장과 작용을 억제 할뿐 아니라 곰팡이의 번식으로부터 제품을 보호합니다."
+  images: "/images/ntbac_line.jpg"
+
+- title: ECO Line
+  url: eco_line
+  subtitle: "에코 라인에 환경보호를 위하여 재활용 섬유로 제작된 모델입니다."
+  images: "/images/eco_line.jpg"
+
+- title: Handy Stamp
+  url: handy_stamp
+  subtitle: "휴대용이 가능한 스템프 모델 입니다."
+  images: "/images/handy_stamp.jpg"
+
+- title: Essential/Heavy
+  url: essential_line
+  subtitle: "풀사이즈의 소프트한 모델입니다."
+  images: "/images/essential_line.jpg"
+
+- title: DUO
+  url: duo_line
+  subtitle: "다양한 크기의 고무스템프 입니다."
+  images: "/images/duo_line.jpg"
+
+- title: Embossing Seal
+  url: embossing_seal
+  subtitle: "엠보싱 압입처리를 할 수 있는 스템프 입니다."
+  images: "/images/embossing_seal.jpg"
+
+- title: Textile Labeling Kit
+  url: testile_labeling_kit
+  subtitle: "옷과 개인 소지품등에 사용이 가능합니다."
+  images: "/images/testile_labeling_kit.jpg"
+
+- title: Personal Seal
+  url: personal_seal
+  subtitle: "개인적인 실을 찍을수 있는 인장입니다."
+  images: "/images/personal_seal.jpg"
+
+- title: Eminent Line
+  url: eminent_line
+  subtitle: "만년인 형태의 플렛 스타일의 pre_ink 타입니다."
+  images: "/images/eminent_line.jpg"
+
+- title: OA Pre-Inked Stamp
+  url: oa_preinked_stamp
+  subtitle: "사무용 문구들이 들어간 스템프 입니다."
+  images: "/images/oa_preinked_stamp.jpg"
+
+- title: DIY Kit
+  url: diy_kit
+  subtitle: "영문 글자를 조립하여 사용이 가능합니다."
+  images: "/images/diy_kit.jpg"
+
+- title: Date Stamp / Number
+  url: date_stamp
+  subtitle: "날짜, 숫자를 찍을 수 있는 스펨프 입니다"
+  images: "/images/die_plate_dater.jpg"
+
+- title: Pad
+  url: pad
+  subtitle: "전용패드 입니다."
+  images: "/images/pad_line.jpg"
+
+- title: Ink
+  url: ink
+  subtitle: "전용 잉크입니다."
+  images: "/images/ink_line.jpg"
