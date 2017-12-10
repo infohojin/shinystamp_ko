@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- 메인슬라이드 -->
+{% include slide/slide_main.html %}
+
+<!-- 상품설명  -->
+<div class="container">
+
+    <!-- 주문 및 결제정보 -->
+    <h1 class="my-4"></h1>
+    <div class="row">        
+        <div class="col-lg-8">
+            <h3>주문방법</h3>
+            <hr>
+            <p>제작하실 제품과 내용을 이메일(infohojin@naver.com) 으로 보내주시면 됩니다. 제작기간은 2~3일정도 소요됩니다.</p>
+
+            <p>상담 문의는 오전 11:00 ~ 6:00 까지만 가능합니다. 문의는 이메일로만 받습니다. 공휴일 및 토,일요일은 상담을 받지 않습니다.</p>
+
+            <p>[중요]스템프는 제품특성상 제작진행후 반품 및 환불이 되지 않습니다!</p>
+        </div>
+        <div class="col-lg-4">
+            <h3>입금 및 계좌번호</h3>
+            <hr>
+            <p>주문 메일을 신청후에, 하기 계좌로 입금을 해주셔야지 제작이 진행됩니다.</p>
+            <p>우리은행 560-273083-02-001 이호진</p>
+
+        </div>
+    </div>
+
+    <h1 class="my-4">제품 분류</h1>
+    <hr>
+    <div class="row">
+        {% for products in site.data.product %}
+
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="{{products.images}}" alt="">
+          <h3><a href="/{{products.url}}/">{{products.title}}</a></h3>
+          <p>{{products.subtitle}}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+
+
+    <!-- /.row -->
+    {{ content }}
+</div>
+<!-- /.container -->
+
