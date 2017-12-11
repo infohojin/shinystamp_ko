@@ -23,7 +23,12 @@
   subtitle: "휴대용이 가능한 스템프 모델 입니다."
   images: "/images/handy_stamp.jpg"
 
-- title: Essential/Heavy
+- title: Heavy
+  url: heavy_metal
+  subtitle: "풀사이즈의 소프트한 모델입니다."
+  images: "/images/essential_line.jpg"
+
+- title: Essential
   url: essential_line
   subtitle: "풀사이즈의 소프트한 모델입니다."
   images: "/images/essential_line.jpg"
