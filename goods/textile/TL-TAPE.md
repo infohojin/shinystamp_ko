@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /TL-TAPE/
+permalink: /kr/L-TAPE/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 TL-TAPE
 subtitle: ""
 spec: 
 price: 
+currency: KRW
 
 categories: textile
 type: etc

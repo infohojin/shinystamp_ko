@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /EM-8/
+permalink: /kr/EM-8/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 EM-8
 subtitle: ""
 spec: 41x41mm
 price: 
+currency: KRW
 
 categories: enbossing
 type: etc

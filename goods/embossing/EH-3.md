@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /EH-3/
+permalink: /kr/EH-3/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 EH-3
 subtitle: ""
 spec: 50x50mm
 price: 
+currency: KRW
 
 categories: enbossing
 type: etc

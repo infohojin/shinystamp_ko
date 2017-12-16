@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /EH-2/
+permalink: /kr/EH-2/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 EH-2
 subtitle: ""
 spec: 50mm
 price: 
+currency: KRW
 
 categories: enbossing
 type: etc

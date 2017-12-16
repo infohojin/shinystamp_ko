@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /TL-ST-1/
+permalink: /kr/TL-ST-1/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 TL-ST-1
 subtitle: ""
 spec: 
 price: 
+currency: KRW
 
 categories: textile
 type: etc

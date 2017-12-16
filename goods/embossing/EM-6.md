@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /EM-6/
+permalink: /kr/EM-6/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 EM-6
 subtitle: ""
 spec: 25x50mm
 price: 
+currency: KRW
 
 categories: enbossing
 type: etc

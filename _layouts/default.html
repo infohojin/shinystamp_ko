@@ -1,57 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
-  <head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="{{page.title}}">
-    <meta name="keyword" content="샤이니스템프, shinystamp, {{page.title}}">
-    <meta name="author" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="{{page.title}} {{page.meta_description}}">
+        <meta name="keyword" content="샤이니스템프, shinystamp, {{page.title}},{{page.meta_keyword}}">
+        <meta name="author" content="">
 
-    <title>샤이니스템프 {{page.title}}</title>
+        <title>샤이니스템프 {{page.title}}</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/css/half-slider.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="/css/half-slider.css" rel="stylesheet">
 
-    <!-- jiny style sheet -->
-    <link href="/css/jcss.css" rel="stylesheet">
+        <!-- jiny style sheet -->
+        <link href="/css/jcss.css" rel="stylesheet">
 
-    <!-- 파이어베이스-->
-    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyC8XmJgmRg5C9B6DD5tDj1xYqj767Uv2DU",
-            authDomain: "hojin-io.firebaseapp.com",
-            databaseURL: "https://hojin-io.firebaseio.com",
-            projectId: "hojin-io",
-            storageBucket: "hojin-io.appspot.com",
-            messagingSenderId: "808579629801"
-        };
-        firebase.initializeApp(config);
-    </script>
+        <!-- 파이어베이스-->
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyC8XmJgmRg5C9B6DD5tDj1xYqj767Uv2DU",
+                authDomain: "hojin-io.firebaseapp.com",
+                databaseURL: "https://hojin-io.firebaseio.com",
+                projectId: "hojin-io",
+                storageBucket: "hojin-io.appspot.com",
+                messagingSenderId: "808579629801"
+            };
+            firebase.initializeApp(config);
+        </script>
 
-    
+        <style>
+            body {
+                padding-top: 54px;
+            }
+            @media (min-width: 992px) {
+                body {
+                    padding-top: 56px;
+                }
+            }
+        </style>
 
-
-
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-
-    </style>
-
-  </head>
+    </head>
 
   <body>
 
@@ -62,15 +57,12 @@
     {{ content }}
 
 
-    <div class="container">
-    
+    <div class="container">    
         <!-- 에드센스 광고 삽입 -->
-        {% include adsense/adsense_01.html %}    
-            
-        
+        {% include adsense/adsense_01.html %} 
     </div>   
 
-    <!-- 하단해더 삽입 -->
+    <!-- 하단푸터 삽입 -->
     {% include footer.html %}
 
   </body>

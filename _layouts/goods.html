@@ -31,7 +31,15 @@ layout: default
                 <hr>
                 
                 <h4>스팩 : {{page.spec}}</h4>
-                <h4>판매가격 : {{page.price}}원 (부가세별도)</h4>
+
+                {% if page.price %}
+                    <h4>판매가격 : 
+                    {% if page.currency == "KRW" %}
+                        KRW {{page.price}}원     
+                    {% endif %}
+                    (부가세별도)</h4>
+                {% endif %}
+                
                 <p class="card-text">{{page.subtitle}}</p>
                 <hr>
 
@@ -71,11 +79,11 @@ layout: default
             <div class="mt-4">
             <div class="list-group">        
                 {% for goods in site.pages %}
-                    {% if goods.type == page.type %}                      
+                    {% if goods.type == page.type %}                   
                     <a href="{{ goods.permalink }}" class="list-group-item">
                         {{ goods.title }}
-                        {% if goods.size %} 
-                            ({{ goods.size }})
+                        {% if goods.spec %} 
+                            ({{ goods.spec }})
                         {% endif %}
                     </a>
                     {% endif %}

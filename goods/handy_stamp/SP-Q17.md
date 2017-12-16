@@ -1,11 +1,15 @@
 ---
 layout: goods
-permalink: /SP-Q17/
+permalink: /kr/SP-Q17/
+language: "ko"
+country: "kr"
+pos: 5
 
 title: 샤이니 SP-Q17
 subtitle: "자동으로 잉크가 나오는 스템프 입니다."
 spec: 17x17mm
 price: 
+currency: KRW
 
 categories: handy_stamp
 type: circle

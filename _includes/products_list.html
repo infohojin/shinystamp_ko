@@ -1,0 +1,25 @@
+<!-- 상품 목록처리 -->
+{% for goods in site.pages %}
+    {% if goods.categories == page.products_group and goods.country == site.country %}
+    
+        <div class="row">
+            <div class="col-md-6">
+                <!-- 이미지 마우스 오버시 확대 에니메이션 -->
+                <div class="jcss_img">
+                    <div class="jcss_scale">
+                        <a href="{{goods.permalink}}"><img class="card-img-top" src="{{ goods.images1 }}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3><a href="{{goods.permalink}}">{{ goods.title }}</a></h3>
+                <p>{{ goods.spec }}</p>
+                <p>{{ goods.price }}</p>
+                <p>{{ goods.subtitle }}</p>         
+            </div>
+
+        </div>
+        <hr>
+    {% endif %}
+{% endfor %}  

@@ -8,35 +8,5 @@ list_categories: "squre"
 permalink: /squre/
 ---
 
-{% for menu in site.pages %}
-    {% if menu.type == page.list_categories %}   
-            
-            
-    <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-            <!-- 이미지 마우스 오버시 확대 에니메이션 -->
-            <div class="jcss_img">
-                <div class="jcss_scale">
-                    <a href="{{menu.permalink}}"><img class="card-img-top" src="{{ menu.images1 }}" alt=""></a>
-                </div>
-            </div>
-            
-            <hr>
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="{{menu.permalink}}">{{ menu.title }}</a>
-                </h4>
-                <p class="card-text">{{ menu.size }}</p>
-                <h5>{{ menu.price }}</h5>
-                <p class="card-text">{{ menu.subtitle }}</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">{{ menu.categories }}</small>
-            </div>
-        </div>
-    </div>
-
-
-    {% endif %}
-{% endfor %} 
+{% include goods_list.html %}
 
