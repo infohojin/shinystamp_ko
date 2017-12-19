@@ -1,0 +1,32 @@
+- title: 四角形
+  url: rect
+
+- title: 四角+日にち
+  url: rect_dater
+
+- title: 正四角形
+  url: squre
+
+- title: 正四角+日にち
+  url: squre_dater
+
+- title: 円型
+  url: circle_dater
+
+- title: 楕円
+  url: oval
+
+- title: 日にち/数字
+  url: dater
+
+- title: 交替パッド
+  url: pad
+
+- title: リフィルインク
+  url: ink
+
+- title: DIY Kit
+  url: diy
+
+- title: その他
+  url: etc
