@@ -1,6 +1,6 @@
 ---
 # 한국어 사이트, 메인 페이지
-layout: default
+layout: korean
 permalink: /kr/
 ---
 

@@ -32,15 +32,7 @@ layout: default
     <h1 class="my-4">제품 분류</h1>
     <hr>
     <div class="row">
-        {% for products in site.data.product %}
-
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="{{products.images}}" alt="">
-          <h3><a href="/{{products.url}}/">{{products.title}}</a></h3>
-          <p>{{products.subtitle}}</p>
-        </div>
-        {% endfor %}
-
+        {% include products_index.htm %}
     </div>
 
 
